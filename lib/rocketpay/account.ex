@@ -16,7 +16,7 @@ defmodule Rocketpay.Account do
     timestamps()
   end
 
-  def changeset(params) do
+  def changeset(struct \\ %__MODULE__{}, params) do
     %__MODULE__{}
     |> cast(params, @required_params)
     |> validate_required(@required_params)
