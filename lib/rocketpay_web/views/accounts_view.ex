@@ -7,7 +7,7 @@ defmodule RocketpayWeb.AccountsView do
       account: %{
         id: account_id,
         balance: balance
-        }
       }
+    }
   end
 end
