@@ -7,7 +7,7 @@ defmodule RocketpayWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_rocketpay_key",
-    signing_salt: "2N2YmE5Y"
+    signing_salt: "q5k+uqD8"
   ]
 
   socket "/socket", RocketpayWeb.UserSocket,

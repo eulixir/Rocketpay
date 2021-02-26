@@ -2,12 +2,13 @@ defmodule Rocketpay.User do
   use Ecto.Schema
   import Ecto.Changeset
 
-  alias Rocketpay.Account
   alias Ecto.Changeset
+  alias Rocketpay.Account
 
   @primary_key {:id, :binary_id, autogenerate: true}
 
-  @required_params [:name, :email, :password, :nickname, :age]
+  @required_params [:name, :age, :email, :password, :nickname]
+
   schema "users" do
     field :name, :string
     field :age, :integer
