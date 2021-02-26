@@ -10,14 +10,7 @@ defmodule Rocketpay.MixProject do
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps(),
-      test_coverage: [tool: ExCoveralls],
-      preferred_cli_env: [
-        coveralls: :test,
-        "coveralls.detail": :test,
-        "coveralls.post": :test,
-        "coveralls.html": :test
-      ]
+      deps: deps()
     ]
   end
 
@@ -52,8 +45,7 @@ defmodule Rocketpay.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:bcrypt_elixir, "~> 2.0"},
-      {:decimal, "~> 2.0"},
-      {:excoveralls, "~> 0.10", only: :test}
+      {:decimal, "~> 2.0"}
     ]
   end
 
